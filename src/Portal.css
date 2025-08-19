@@ -1,0 +1,14 @@
+.container {
+	display: flex;
+	overflow-x: auto;
+	gap: 1rem;
+	padding: 1rem;
+	scroll-behavior: smooth;
+	flex-direction: column;
+}
+
+.introduction-box {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: row;
+}
