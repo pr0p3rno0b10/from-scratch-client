@@ -1,3 +1,6 @@
+@import 'material-icons/iconfont/material-icons.css'
+
+
 .container {
 	display: flex;
 	/*overflow-x: auto; */
@@ -36,9 +39,27 @@
 	color: #FFFFFF;
 }
 
-.paragraph-text {
+.list-container {
 	padding-left: 1rem;
 	padding-top: 0.25rem;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.25rem;
+}
+
+.list-element {
+	margin: 10px;
+	display: flex;
+}
+
+.list-text {
+	padding-left: 1rem;
+	padding-top: 0.25rem;
+}
+
+.material-icons {
+	color: #FFFFFF;
+	margin-top: 5px;
 }
 
 .first-class-button {
@@ -50,19 +71,20 @@
   color: black;
   background: white;
   border-radius: 8px;
-  border: 3px solid white; /* starts white */
+  border: 3px solid white; 
   cursor: pointer;
   overflow: hidden;
   z-index: 0;
+  text-decoration: none;
 }
 
-/* Rainbow border overlay */
+
 .first-class-button::before {
   content: "";
   position: absolute;
-  inset: 0; /* fill button */
+  inset: 0;
   border-radius: inherit;
-  padding: 3px; /* border thickness */
+  padding: 3px; 
   background: linear-gradient(
     90deg,
     red, orange, yellow, green, cyan, blue, violet, red
@@ -73,13 +95,12 @@
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude; /* hide inside, show only border */
-  opacity: 0; /* hidden by default */
+          mask-composite: exclude; 
+  opacity: 0;
   transition: opacity 0.3s ease;
   z-index: -1;
 }
 
-/* Show rainbow only on hover */
 .first-class-button:hover::before {
   opacity: 1;
 }
@@ -92,6 +113,15 @@
 
 .introduction-box-right-side {
 	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.graphic-image {
+	height: 50vh;
+	width: 50vh;
+	background: white;
 }
 
 .pricing-box-container {
