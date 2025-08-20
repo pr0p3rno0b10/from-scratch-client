@@ -28,11 +28,11 @@ const Portal = () => {
 								</div>
 								<div className="list-element">
 									<span className="material-icons">check_circle</span>
-									<div className="list-text">1:1 coding classes for kids aged 7-18 tailored to your needs</div>
+									<div className="list-text">lorem ipslum</div>
 								</div>
 								<div className="list-element">
 									<span className="material-icons">check_circle</span>
-									<div className="list-text">1:1 coding classes for kids aged 7-18 tailored to your needs</div>
+									<div className="list-text">lorem ipslum</div>
 								</div>
 							</div>
 							<Link to="/signup" className="first-class-button">Get your first class free!</Link>
@@ -42,11 +42,22 @@ const Portal = () => {
 						</div>
 					</div>
 				</div>
+				<div className="roadmap-box-container">
+					<div className="header">Roadmap</div>
+					<div className="courses-container">
+						<div className="course-button">
+							Scratch
+						</div>
+						<div className="course-button">
+							Python
+						</div>
+						<div className="course-button">
+							More coming soon
+						</div>
+					</div>
+				</div>
 				<div className="pricing-box-container">
 				
-				</div>
-				<div className="roadmap-box-container">
-					
 				</div>
 			</div>
 		</div>

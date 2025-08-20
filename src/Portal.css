@@ -34,7 +34,7 @@
 
 .header {
 	font-size: 4.25rem;
-	padding: 1rem;
+	padding: 0.5rem;
 	font-weight: bold;
 	color: #FFFFFF;
 }
@@ -55,6 +55,7 @@
 .list-text {
 	padding-left: 1rem;
 	padding-top: 0.25rem;
+	font-style: italic;
 }
 
 .material-icons {
@@ -124,14 +125,34 @@
 	background: white;
 }
 
-.pricing-box-container {
-	height: 550px;
-	background-color: #1A1A2E;
 
-}
 
 .roadmap-box-container {
+  height: 550px;
+  background-color: #1A1A2E;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 100vw;
+}
+
+.courses-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  width: 100%;
+}
+
+.course-button {
+	height: 25vh;
+	width: 25vh;
+	background: white;
+}
+
+.pricing-box-container {
 	height: 550px;
 	background-color: #FF5F1F;
+
 
 }
