@@ -1,14 +1,107 @@
 .container {
 	display: flex;
-	overflow-x: auto;
-	gap: 1rem;
-	padding: 1rem;
-	scroll-behavior: smooth;
+	/*overflow-x: auto; */
+	/*scroll-behavior: smooth;*/
 	flex-direction: column;
+	/*scroll-snap-type: x mandatory;*/
+	min-height: 100vh;
 }
 
-.introduction-box {
-	flex: 0 0 auto;
+.introduction-box-container {
+	height: 550px;
+	background-color: #FF5F1F;
+}
+
+.split {
 	display: flex;
 	flex-direction: row;
+	width: 100%;
+	height: 100%;
+
+}
+
+.introduction-box-left-side {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+}
+
+.header {
+	font-size: 4.25rem;
+	padding: 1rem;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.paragraph-text {
+	padding-left: 1rem;
+	padding-top: 0.25rem;
+}
+
+.first-class-button {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  font-weight: bold;
+  color: black;
+  background: white;
+  border-radius: 8px;
+  border: 3px solid white; /* starts white */
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Rainbow border overlay */
+.first-class-button::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* fill button */
+  border-radius: inherit;
+  padding: 3px; /* border thickness */
+  background: linear-gradient(
+    90deg,
+    red, orange, yellow, green, cyan, blue, violet, red
+  );
+  background-size: 400% 400%;
+  animation: rainbow 6s linear infinite;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; /* hide inside, show only border */
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+/* Show rainbow only on hover */
+.first-class-button:hover::before {
+  opacity: 1;
+}
+
+@keyframes rainbow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.introduction-box-right-side {
+	flex: 1;
+}
+
+.pricing-box-container {
+	height: 550px;
+	background-color: #1A1A2E;
+
+}
+
+.roadmap-box-container {
+	height: 550px;
+	background-color: #FF5F1F;
+
 }
