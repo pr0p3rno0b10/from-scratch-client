@@ -13,19 +13,19 @@ const RoadmapBox = () => {
 			<div className="roadmap-box__courses-container">
 				<CourseButton
 					title="Scratch"
-					image={scratchPhoto}
+					img={scratchPhoto}
 					alt="Scratch Photo"
 				/>
 				<span className="roadmap-box__courses-container__arrow-icon material-icons">arrow_right_alt</span>
 				<CourseButton
 					title="Python"
-					image={pythonPhoto}
+					img={pythonPhoto}
 					alt="Python Photo"
 				/>
 				<span className="roadmap-box__courses-container__arrow-icon material-icons">arrow_right_alt</span>
 				<CourseButton
 					title="More Coming Soon..."
-					image={questionMarkPhoto}
+					img={questionMarkPhoto}
 					alt="Question Mark Photo"
 				/>
 			</div>
