@@ -15,18 +15,21 @@ const RoadmapBox = () => {
 					title="Scratch"
 					img={scratchPhoto}
 					alt="Scratch Photo"
+					language="scratch"
 				/>
 				<span className="roadmap-box__courses-container__arrow-icon material-icons">arrow_right_alt</span>
 				<CourseButton
 					title="Python"
 					img={pythonPhoto}
 					alt="Python Photo"
+					language="python"
 				/>
 				<span className="roadmap-box__courses-container__arrow-icon material-icons">arrow_right_alt</span>
 				<CourseButton
 					title="More Coming Soon..."
 					img={questionMarkPhoto}
 					alt="Question Mark Photo"
+					language="more_coming_soon"
 				/>
 			</div>
 		</div>

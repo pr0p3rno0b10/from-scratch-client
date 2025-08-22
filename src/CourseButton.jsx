@@ -1,13 +1,15 @@
 import "./index.sass";
 
-const CourseButton = ({ title, img, alt }) => {
+import { Link } from 'react-router-dom';
+
+const CourseButton = ({ title, img, alt, language }) => {
 	return (
-		<div className="course-button">
+		<Link to={`/roadmap/${language}`} className="course-button">
 			<div className="course-button__title">
 				{title}
 			</div>
 			<img className="course-button__image" src={img} alt={alt}/>
-		</div>
+		</Link>
 	);
 }
 
