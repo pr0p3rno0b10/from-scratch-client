@@ -6,7 +6,7 @@ import {
 import React, { useEffect, useState } from 'react';
 
 
-import './App.css';
+import './index.sass';
 
 import Portal from "./Portal";
 import PricingPage from "./PricingPage";

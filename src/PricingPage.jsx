@@ -1,4 +1,4 @@
-import "./PricingPage.css";
+import "./index.sass";
 
 const PricingPage = () => {
 	return (<div></div>);
