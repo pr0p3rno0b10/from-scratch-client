@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const NavigationBar = () => {
 	return (
 		<div className="navbar">
-			<div className="navbar__title">From Scratch</div>
+			<Link to="/" className="navbar__title">From Scratch</Link>
 			<div className="navbar__links-container">
 				<Link to="/roadmap" className="navbar__links-container__button">
 					Roadmap
