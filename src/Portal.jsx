@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import NavigationBar from "./NavigationBar";
 import IntroductionBox from "./IntroductionBox";
 import RoadmapBox from "./RoadmapBox";
+import HowItWorksBox from "./HowItWorksBox.jsx"
 
 const Portal = () => {
 	return (
@@ -13,9 +14,7 @@ const Portal = () => {
 			<div className="portal-container">
 				<IntroductionBox/>
 				<RoadmapBox/>
-				<div className="pricing-box-container">
-				
-				</div>
+				<HowItWorksBox/>
 			</div>
 		</div>
 	);
