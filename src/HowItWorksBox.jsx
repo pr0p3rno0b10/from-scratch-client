@@ -8,7 +8,7 @@ const HowItWorksBox = () => {
 			<div className="how-it-works-box__medium-title">
 				How <span className="how-it-works-box__medium-title__highlight">From Scratch</span> Works
 			</div>
-			<div className="how-it-works-box__paragraph">need to work on this</div>
+			<div className="how-it-works-box__paragraph">need to write this + work on sass</div>
 			<div className="how-it-works-box__steps-box-container">
 				<StepsBox
 					title="Sign-up"
@@ -21,14 +21,14 @@ const HowItWorksBox = () => {
 					title="First Lesson"
 					img=""
 					alt="first lesson graphic"
-					text="First, you sign up!"
+					text="need to write this"
 					number="2"
 				/>
 				<StepsBox
 					title="Learn!"
 					img=""
 					alt="learn graphic"
-					text="First, you sign up!"
+					text="need to write this"
 					number="3"
 				/>
 			</div>
