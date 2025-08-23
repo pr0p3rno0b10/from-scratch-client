@@ -11,22 +11,25 @@ const HowItWorksBox = () => {
 			<div className="how-it-works-box__paragraph">need to work on this</div>
 			<div className="how-it-works-box__steps-box-container">
 				<StepsBox
-					title="Step 1: Sign-up"
+					title="Sign-up"
 					img=""
 					alt="sign-up graphic"
-					text="First, you sign up!"
+					text="First, you sign up! We will ask you a bit about yourself and your past programming knowledge. Then place you in an appropriate level of programming. You'll be assigned to one of our instructors for your first class."
+					number="1"
 				/>
 				<StepsBox
-					title="Step 2: First Lesson"
+					title="First Lesson"
 					img=""
-					alt="sign-up graphic"
+					alt="first lesson graphic"
 					text="First, you sign up!"
+					number="2"
 				/>
 				<StepsBox
-					title="Step 3: Learn"
+					title="Learn!"
 					img=""
-					alt="sign-up graphic"
+					alt="learn graphic"
 					text="First, you sign up!"
+					number="3"
 				/>
 			</div>
 		</div>

@@ -111,6 +111,7 @@
 					padding-left: 1rem
 					padding-top: 0.25rem
 					font-style: italic
+					font-weight: bold
 	&__right-side 
 		flex: 1
 		display: flex
@@ -134,10 +135,11 @@
 	text-decoration: none
 	color: black
 	cursor: pointer
-	transition: transform 0.2s ease, box-shadow 0.2s ease
+	transition: transform 0.2s ease, background-color 0.2s ease
 	&:hover
 		transform: translateY(-20px)
-		box-shadow: 0 6px 12px rgba(0,0,0,0.15)
+		background-color: #C0C0C0
+
 	&__title
 		font-size: 1.25rem
 		margin: 0.25rem
@@ -177,6 +179,7 @@
 	flex-direction: column
 	align-items: center
 	&__medium-title
+		margin-top: 0.5rem
 		font-size: 3.5rem
 		font-weight: bold
 		&__highlight
@@ -192,10 +195,29 @@
 
 .step-box
 	height: 20vw
-	width: 30vh
+	width: 40vh
 	background-color: white
+	display: flex
+	flex-direction: column
 	&__top-half
-		&__title
+		display: flex
+		flex-direction: row
+		margin: 1rem
+		&__title-container
+			display: flex
+			flex-direction: column
+			flex: 1
+			&__step-number
+				font-size: 1.5rem
+				font-weight: bold
+			&__title
+				font-size: 1.25rem
+				font-style: italic
 		&__graphic 
+			margin-left: 0.25rem
+			flex: 1
 	&__text
+		margin-bottom: 1rem
+		margin-right: 1rem
+		margin-left: 1rem
 
